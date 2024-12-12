@@ -54,6 +54,7 @@
     border-radius: 10px;
     background: hsl(130deg, 8%, 14%);
     transition: 0.5s;
+    cursor: pointer;
   }
   
   .card-list .card-item .user-image {
