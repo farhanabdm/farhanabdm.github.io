@@ -1,0 +1,144 @@
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+  }
+  
+  .caption {
+    position: absolute;
+    visibility:hidden;
+    text-align: center;
+    margin: 1.3em
+  }
+  
+  .capt-bold {
+    font-weight: bold;
+  }
+  
+  .card-item:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
+    .caption {
+      visibility: visible;
+    }
+    .hover-bg {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      position: fixed;
+      background-color: hsla(120, 5%, 4%, 0.705);
+      visibility: visible;
+      transition: 0.5s;
+    }
+  }
+  
+  .hover-bg {
+    visibility: hidden;
+  }
+  
+  .card-item img{
+    max-width: 350px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .card-list .card-item {
+    height: auto;
+    color: #fff;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: hsl(130deg, 8%, 14%);
+    transition: 0.5s;
+  }
+  
+  .card-list .card-item .user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    padding: 4px;
+  }
+  
+  .card-list .card-item .user-profession {
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+  }
+  
+  .card-list .card-item .message-button {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+  }
+  
+  .card-list .card-item .message-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  
+  
+  
+  .slider-wrapper .swiper-pagination-bullet {
+    background: #030728;
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+  }
+  
+  .slider-wrapper .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  
+  .slider-wrapper .swiper-slide-button {
+    color: #030728;
+    margin-top: -55px;
+    transition: 0.2s ease;
+  }
+  
+  .slider-wrapper .swiper-slide-button:hover {
+    color: #4658ff;
+  }
+  
+  @media (max-width: 768px) {
+    .slider-wrapper {
+      margin: 0 10px 40px;
+    }
+  
+    .slider-wrapper .swiper-slide-button {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    .card-list .card-item {
+      height: 200px;
+    }
+
+    .caption {
+      font-size: 0.6em;
+    }
+
+    .card-item img{
+      margin-bottom: 0;
+    }
+
+    .card-item {
+      overflow: hidden;
+    }
+  }
+
+  

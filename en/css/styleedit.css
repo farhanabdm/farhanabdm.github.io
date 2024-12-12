@@ -1,0 +1,160 @@
+.header-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+.intro-text {
+    color: white;
+    font-size: 3em;
+    text-align: justify;
+}
+
+.logo-text {
+    color: white;
+    margin: 0;
+    font-size: 1.5em;
+    justify-self: flex-start;
+    position: relative;
+    top: -1.3vh;
+}
+
+.farhan-lab {
+    width: 60%;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.readmore {
+    padding: 0.7em;
+    position: absolute;
+    font-size: 0.8em;
+}
+
+.cont-tes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.port-cont {
+    margin-left: 7vw;
+    display: inline;
+}
+
+.s-clients {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.clients-list__item a {
+    height: 100%;
+}
+
+.serv-desc {
+    margin-top: 5em;
+    text-align: justify;
+    display: none;
+}
+
+#autocad:before, #excel:before, #hms:before, #pandas:before, #ras:before, #word:before {
+    position: relative;
+    content: "";
+    display: block;
+    padding-top: 60vh;
+    margin-top: -60vh; /* Mengarahkan target ke luar viewport */
+    z-index: -100;
+}
+
+
+#autocad:target {
+    display: block;
+}
+
+#excel:target {
+    display: block;
+}
+
+#hms:target {
+    display: block;
+}
+
+#pandas:target {
+    display: block;
+}
+
+#ras:target {
+    display: block;
+}
+
+#word:target {
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    div.container.swiper {
+        right: 18vw;
+    }
+
+    .intro-text {
+        font-size: 1.8em;
+        margin-top: 1em;
+    }
+
+    .card__content {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    div.container.swiper {
+        right: 35vw;
+    }
+
+    .intro-text {
+        font-size: 1.5em;
+    }
+
+    .clients-list__item a {
+        padding: 0.4em;
+    }
+
+    .clients-list {
+        width: 332px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #autocad:before, #excel:before, #hms:before, #pandas:before, #ras:before, #word:before {
+        position: relative;
+        content: "";
+        display: block;
+        padding-top: 50vh;
+        margin-top: -60vh; /* Mengarahkan target ke luar viewport */
+        z-index: -100;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .header-cont.active {
+      background-color: hsl(130deg, 8%, 14%);
+      transition: 0.5s;
+    }
+
+    nav ul.s-header__menu-links {
+        top: 2rem;
+        right:15vw;
+        position: relative;
+    }
+    .logo-text {
+        top: 0;
+    }
+  }
+
